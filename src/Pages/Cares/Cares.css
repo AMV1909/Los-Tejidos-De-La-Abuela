@@ -1,0 +1,166 @@
+.lzdla__cares {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+
+    padding-top: 2rem;
+}
+
+.lzdla__cares h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.lzdla__cares__container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    place-items: center;
+}
+
+.lzdla__cares__container__card {
+    width: 256px;
+    height: 216px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.lzdla__cares__container__card div {
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+
+    padding-left: 0.5rem;
+}
+
+.lzdla__cares__container__card img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+
+    border-radius: 1rem;
+}
+
+.lzdla__cares__container__card div p {
+    width: 75%;
+}
+
+.prohibido {
+    position: absolute;
+    margin-top: 3rem;
+
+    width: 125px !important;
+    height: 125px !important;
+}
+
+.lzdla__cares__materials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 5rem;
+}
+
+.lzdla__cares__materials h1 {
+    font-size: 4rem;
+}
+
+.lzdla__cares__materials p {
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: justify;
+    font: bold;
+}
+.materialsIndeed {
+    font-size: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 4rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .lzdla__cares__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lzdla__cares__container__card {
+        width: 292px;
+        height: 256px;
+    }
+
+    .prohibido {
+        width: 140px !important;
+        height: 140px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .lzdla__cares h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .lzdla__cares h1 {
+        font-size: 2rem;
+    }
+
+    .lzdla__cares__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lzdla__cares__materials {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .lzdla__cares__materials p {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    .materialsIndeed p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .lzdla__cares__container__card {
+        width: 256px;
+        height: 216px;
+    }
+
+    .prohibido {
+        width: 125px !important;
+        height: 125px !important;
+    }
+
+    .lzdla__cares__materials {
+        margin-top: 0;
+    }
+
+    .lzdla__cares__materials p,
+    .materialsIndeed p {
+        font-size: 1rem;
+    }
+}

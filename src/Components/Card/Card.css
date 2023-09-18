@@ -25,3 +25,19 @@
 .lzdla__card p {
     text-align: justify;
 }
+
+@media (max-width: 375px) {
+    .clip-icon {
+        margin-left: -12.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .clip-icon {
+        margin-left: -10rem;
+    }
+
+    .lzdla__card p {
+        font-size: 0.75rem;
+    }
+}
