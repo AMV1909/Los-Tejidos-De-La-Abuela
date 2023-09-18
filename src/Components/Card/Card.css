@@ -1,0 +1,27 @@
+.clip-icon {
+    position: absolute;
+    z-index: 10;
+    margin-top: -4rem;
+    margin-left: -15rem;
+}
+
+.lzdla__card {
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lzdla__card h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.lzdla__card p {
+    text-align: justify;
+}

@@ -1,0 +1,163 @@
+.lzdla__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    width: 100%;
+
+    padding: 2rem 0;
+}
+
+.lzdla__about img {
+    width: 400px;
+    height: 400px;
+}
+
+.lzdla__about-section_title {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lzdla__about-section_title div,
+.lzdla__about-section_title img {
+    width: 50%;
+    text-align: center;
+}
+
+.lzdla__about-section_title h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.lzdla__about-section_title p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.lzdla__about-information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.lzdla__about-certifications {
+    margin: 2rem 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.lzdla__about-certifications h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.lzdla__about-certifications div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 60%;
+}
+
+.lzdla__about-certifications div img {
+    width: 200px;
+    height: 200px;
+}
+
+.lzdla__about-certifications div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.fix {
+    border-radius: 50%;
+}
+
+.lzdla__about-certifications p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .lzdla__about-section_title h1 {
+        font-size: 3rem;
+    }
+
+    .lzdla__about-section_title p {
+        font-size: 1.5rem;
+    }
+
+    .lzdla__about-information {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .lzdla__about-section_title {
+        flex-direction: column;
+    }
+
+    .lzdla__about-section_title div {
+        width: 100%;
+    }
+
+    .lzdla__about-section_title img {
+        width: 100%;
+    }
+
+    .lzdla__about-information {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lzdla__about-certifications h1 {
+        font-size: 3rem;
+    }
+
+    .lzdla__about-certifications div {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .lzdla__about-certifications h1 {
+        font-size: 2rem;
+    }
+
+    .lzdla__about-certifications p {
+        font-size: 1rem;
+    }
+
+    .lzdla__about-certifications img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .lzdla__about-section_title h1 {
+        font-size: 2rem;
+    }
+
+    .lzdla__about-section_title p {
+        font-size: 1rem;
+    }
+
+    .lzdla__about-section_title img {
+        height: 200px;
+        margin-top: 1rem;
+    }
+}
