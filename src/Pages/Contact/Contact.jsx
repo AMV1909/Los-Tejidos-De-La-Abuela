@@ -77,7 +77,7 @@ export function Contact() {
                 </a>
 
                 <a
-                    href="https://web.whatsapp.com/send/?phone=573134127842&text=Hola%2C+quiero+saber+m%C3%A1s+sobre+sus+productos.&type=phone_number&app_absent=0"
+                    href="https://api.whatsapp.com/send/?phone=573134127842&text=Hola%2C+quiero+saber+más+sobre+sus+productos.&type=phone_number&app_absent=0"
                     target="_blank"
                     rel="noreferrer"
                 >
